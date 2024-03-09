@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    width: 80px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.form2{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+#fart{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+
+.form2 input{
+    font-size: 17px;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+
+.form2 button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.form2 button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons #fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: #000;
+    background: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -10px;
+    }
+   
+    100%{
+        left: 100%;
+    }
+}

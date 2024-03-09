@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.div1{
+    width: 100%;
+    height: 70px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color:  #273cc4;;
+    
+
+}
+
+.navbar{
+    display: flex;
+    width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+
+
+}
+
+.navbar li {
+    font-size: 17px;
+    font-weight: 900;
+    color: #000;
+    cursor: pointer;
+    color: white;
+}
+
+.img-main{
+    top: 10px;
+    left: 20px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.news-heading{
+    top: 10px;
+    right: 50px;
+    font-size: 42px;
+    position: absolute;
+    color: white;
+}
+
+
+.news-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+
+.news-box{
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+    height: 480px;
+}
+
+.news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.news-text .news-title{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #272727;
+
+}
+
+.news-text .news-title:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+.news-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+
+}
+
+.news-text a{
+    color: #0f0f0f;
+
+}
+
+.news-text a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    margin-top: 200px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    width: 80px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.form2{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+#fart{
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+
+.form2 input{
+    font-size: 17px;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+
+.form2 button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+#fart2{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons #fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: #000;
+    background: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -10px;
+    }
+   
+    100%{
+        left: 100%;
+    }
+}

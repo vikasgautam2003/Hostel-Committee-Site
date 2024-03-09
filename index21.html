@@ -18,32 +18,75 @@
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=EB+Garamond&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Bitter:ital@1&family=EB+Garamond&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 </head>
 <body>
-    <div class="div1">
-        <div class="div2">
-            
-            <navbar class="navbar">
-                
-                <li><a href="#event" class="atag">Events</a></li>
-                <li>Gallery</li>
-                <li><a href="#contact1" class="atag">Contact Us</a></li>
-                <li><a href="#news" class="atag">News</a></li>
-                <li><a href="#faqs" class="atag">FAQs</a></li>
-            </navbar>
-        </div>
-        <div class="div3">
-            <h1>HOSTEL COMMITTEE</h1>
-            <p><span id="typing-text"></span> Chitkara University</p>
-            <button class="button1">JOIN US</button>
-        </div>
+    <div id="preloader">
+
     </div>
+    <div class="div-main">
+        <video src="videos/video (2160p) (2).mp4" autoplay muted loop></video>
+        <a href="https://www.chitkara.edu.in/" target="_blank">
+         <img src="images/chitkara-university-47016.jpg" class="main-img">
+        </a>
+            
+    <ul class="navbar-main">
+        <li><a href="Event/event1.html">EVENTS</a></li>
+        <li><a href="Gallery/Gallery.html">GALLERY</a></li>
+        <li><a href="News Page/news.html">NEWS</a></li>
+        
+    </ul>
+    <form class="search-main">
+        <input type="text" placeholder="Search" class="main-search">
+        <button type="submit" class="main-button">Search</button>
+    </form>
+    
+    
+    <h1 class="main-heading">HOSTEL</h1>
+    <H2 class="main-heading2">COMMITTEE</H2>
+    
+    <button class="button1 main-button1">JOIN US</button><button class="button2 main-button2" id="login-button">LOGIN</button>
+    <div class="modal-box">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn-form"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons1">
+                <img src="images/FB-Logo-PNG-Image-File.png">
+                <img src="images/twitter.png">
+                <img src="images/google1.png">
+            </div>
+            <form class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="checkbox" class="check-box1"><span class="check-para1">Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+                <button type="submit" class="submit-btn close close-box" >Close</button>
+               
+            </form>
+            <form class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="checkbox" class="check-box1"><span class="check-para1">I Agree To the Terms and Conditions</span>
+                <button type="submit" class="submit-btn">Log In</button>
+                <button type="submit" class="submit-btn close close-box">Close</button>
+            </form>
+    </div>
+</div>
+</div>
     
     
     
     <div class="div4" id="about">
         <br><br><br>
-        <div class="div10">
+        <div class="div10 reveal">
         <img src="images/Hostel-Committee (1).jpg" class="image10" >
         <p class="para8">ABOUT US</p>
         
@@ -63,10 +106,13 @@
         <span id="news1">Recent News</span>
         <br><br>
         <h3>News For Hosteler</h3>
+        <a href="News Page/news.html"><button class="news-button">MORE NEWS</button></a>
     </div>
+    
 
-    <div class="news-container">
 
+    <div class="news-container reveal">
+    
         <div class="news-box">
             <div class="news-img">
                 <img src="images/kabaddi.jpg" alt="kabaddi">
@@ -103,7 +149,8 @@
             </div>
         </div>
 <br>
-        <div class="newsmore"><form><label class="news2" for="button3">EXPLORE MORE NEWS</label><button id="button3">GO</button></form></div>
+        </div>
+        <form><div class="newsmore"></form>
 
 </section>
 
@@ -111,7 +158,7 @@
     <br>
     <br><br>
    <section class="sec1" id="event">
-    <div class="div7">
+    <div class="div7 reveal">
     <video src="videos/Harvard Yale 2022.mp4" class="video1" autoplay muted loop></video>
 <br><br><br>
     <p class="para7 special1">EVENTS</p>
@@ -119,10 +166,13 @@
    
     <p class="para7">Step into the vibrant world of our hostel committee where events come alive with boundless energy and creativity! We're the heartbeat of student life, orchestrating unforgettable experiences that resonate with excitement. From dynamic cultural fests to engaging workshops we redefine the essence of student camaraderie, one event at a time!</p>
     <br>
-    <button class="btn3"> DISCOVER MORE</button>
+    <form action="Event/event1.html">
+        <button class="btn3" type="submit">DISCOVER MORE</button>
+    </form>
+    
 </div>
 <br><br><br><br><br><br><br><br>
-    <div class="div7">
+    <div class="div7 reveal">
     <video src="videos/The Harvard Club of Boston Opens Doors.mp4" class="video2" autoplay muted loop></video>
     <br><br><br>
     <p class="para11 special1">MEMBERSHIP PERKS</p>
@@ -133,18 +183,18 @@
    </section>
    <br><br><br><br>
    <section class="container">
-    <h1 class="testheading">Our Testimonials</h1>
+    
     <br>
-    <div class="testimon mySwiper">
+    <div class="testimon mySwiper reveal">
       <div class="content1 swiper-wrapper">
         <div class="slide swiper-slide">
-          <img src="images/DSC_5412.JPG" class="image11">
+          <img src="images/Mark_Zuckerberg_em_setembro_de_2014.jpg" class="image11">
           <p>"Chitkara University's Hostel Club has been an absolute delight! From well-maintained facilities to vibrant community events, it's a home away from home. The dedicated staff ensures a comfortable stay, fostering a sense of camaraderie among students. Grateful for the unforgettable experiences and friendships forged at this exceptional hostel!"</p>
           <i class='bx bxs-quote-alt-left quote'></i>
 
           <div class="details">
-            <span class="name">Vikas Gautam</span>
-            <span class="job">Web developer</span>
+            <span class="name">Mark</span>
+            <span class="job"></span>Web Developer
           </div>
         </div>
         <div class="slide swiper-slide">
@@ -173,9 +223,8 @@
     <div class="swiper-pagination"></div>
     </div>
   </section>
-  
   <section class="sec7" id="faqs">
-    <div class="faq-container">
+    <div class="faq-container reveal">
         <h1 class="faq-title">Frequently Asked Questions</h1>
         <main class="accordion">
             <div class="faq-img">
@@ -276,62 +325,49 @@
         </main>
     </div>
 </section>
-<section class="contact" id="contact1">
-    <div class="contact-content">
-        <h2>Contact Us</h2>
-    </div>
-    <div class="container-Info">
-        <div class="contactInfo">
-            <div class="box-info">
-                <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
-                <div class="text">
-                    <h3>Phone</h3>
-                    <p>+91 9354811773</p>
-                </div>
-            </div>
-            <div class="box-info">
-                <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
-                <div class="text">
-                    <h3>Email</h3>
-                    <p>vikasgautamug2003@gmail.com</p>
-                </div>
-            </div>
-            <h2 class="txt">Connect With Us</h2>
-            <ul class="sci">
-                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+<footer>
+    <div class="row">
+        <div class="col">
+            <h1 class="logo">HC</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem itaque accusantium sed dignissimos soluta eaque possimus, hic nam reiciendis odio.</p>
+        </div>
+        <div class="col">
+            <h3>Office <div class="underline"><span></span></div></h3>
+            <p>Chitkara Studemt Affairs Council</p>
+            <p>Baddi, Himachal Pradesh</p>
+            <p>Chitkara University</p>
+            <p class="email-id">vikasgautamug2003@gmail.com</p>
+            <h4>+91 9354811773</h4>
+        </div>
+        <div class="col">
+            <h3>Links<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="">Events</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Club</a></li>
+                <li><a href="">FAQs</a></li>
             </ul>
         </div>
-        <div class="contactForm">
-           <form>
-            <h2>Send Message</h2>
-            <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span>Full Name</span>
+        <div class="col">
+            <h3>Contact Us <div class="underline"><span></span></div></h3>
+            <form class="form2">
+                <i class="fa-regular fa-envelope far" id="fart"></i>
+                <input type"email" placeholder="Enter Your email id" required>
+                <button type="submit"><i class="fa-solid fa-arrow-right" id="fart2"></i></button>
+            </form>
+            <div class="social-icons12">
+                <img src="images/FB-Logo-PNG-Image-File.png">
+                <img src="images/twitter.png">
+                <img src="images/Instagram_icon.png">
+                <img src="images/circle-linkedin-512.png">
             </div>
-            <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span>Email</span>
-            </div>
-            <div class="inputBox">
-                <textarea required="required"></textarea>
-                <span>Type Your Message....</span>
-            </div>
-            <div class="inputBox">
-                <input type="submit" name="" value="Send">
-            </div>
-           </form>
         </div>
+        
     </div>
-
-</section>
-
-   
-
- 
-
+</footer>
+    
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
     <script src="swiper-bundle.min.js"></script>
@@ -339,6 +375,27 @@
     <script src="index21.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i=0; i<reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+    </script>
 </html>
 
 

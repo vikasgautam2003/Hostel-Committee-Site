@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="hero"></div>
+        <button class="btn1">Home</button>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn-form"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons1">
+                <img src="FB-Logo-PNG-Image-File.png">
+                <img src="pngtree-twitter-social-media-round-icon-png-image_6315985.png">
+                <img src="google1.png">
+            </div>
+            <form class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="checkbox" class="check-box"><span class="check-para">Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="checkbox" class="check-box"><span class="check-para">Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+    </div>
+    
+<script src="login.js"></script>  
+</body>
+</html>

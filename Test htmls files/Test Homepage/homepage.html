@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <div class="div-main">
+        <video src="video (2160p) (2).mp4" autoplay muted loop></video>
+    <img src="chitkara-university-47016.jpg" class="main-img">
+    <ul class="navbar-main">
+        <li>EVENTS</li>
+        <li>GALLERY</li>
+        <li>CONTACT US</li>
+        
+    </ul>
+    <form class="search-main">
+        <input type="text" placeholder="Search" class="main-search">
+        <button type="submit" class="main-button">Search</button>
+    </form>
+    
+    
+    <h1 class="main-heading">HOSTEL</h1>
+    <H2 class="main-heading2">COMMITTEE</H2>
+    
+    <button class="button1 main-button1">JOIN US</button><button class="button2 main-button2" id="login-button">Login/Sign UP</button>
+    <div class="modal-box">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn-form"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons1">
+                <img src="images/FB-Logo-PNG-Image-File.png">
+                <img src="images/twitter.png">
+                <img src="images/google1.png">
+            </div>
+            <form class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="checkbox" class="check-box1"><span class="check-para1">Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+                <button type="submit" class="submit-btn close close-box" >Close</button>
+               
+            </form>
+            <form class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="checkbox" class="check-box1"><span class="check-para1">I Agree To the Terms and Conditions</span>
+                <button type="submit" class="submit-btn">Log In</button>
+                <button type="submit" class="submit-btn close close-box">Close</button>
+            </form>
+    </div>
+</div>
+</div>
+
+<script src="homepage.js"></script>
+    
+</body>
+</html>
